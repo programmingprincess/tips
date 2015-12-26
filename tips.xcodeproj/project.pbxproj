@@ -13,6 +13,7 @@
 		A9118E691C2B54640075C09D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A9118E671C2B54640075C09D /* LaunchScreen.xib */; };
 		A9118E751C2B54640075C09D /* tipsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9118E741C2B54640075C09D /* tipsTests.swift */; };
 		A9118E801C2CEEA00075C09D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9118E7E1C2CEEA00075C09D /* Main.storyboard */; };
+		A92CE3031C2E434700F469BB /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92CE3021C2E434700F469BB /* SettingsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		A9118E731C2B54640075C09D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A9118E741C2B54640075C09D /* tipsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tipsTests.swift; sourceTree = "<group>"; };
 		A9118E7F1C2CEEA00075C09D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A92CE3021C2E434700F469BB /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +82,7 @@
 				A9118E5E1C2B54640075C09D /* AppDelegate.swift */,
 				A9118E601C2B54640075C09D /* ViewController.swift */,
 				A9118E7E1C2CEEA00075C09D /* Main.storyboard */,
+				A92CE3021C2E434700F469BB /* SettingsViewController.swift */,
 				A9118E651C2B54640075C09D /* Images.xcassets */,
 				A9118E671C2B54640075C09D /* LaunchScreen.xib */,
 				A9118E5C1C2B54640075C09D /* Supporting Files */,
@@ -214,6 +217,7 @@
 			files = (
 				A9118E611C2B54640075C09D /* ViewController.swift in Sources */,
 				A9118E5F1C2B54640075C09D /* AppDelegate.swift in Sources */,
+				A92CE3031C2E434700F469BB /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -409,6 +413,7 @@
 				A9118E7A1C2B54640075C09D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A9118E7B1C2B54640075C09D /* Build configuration list for PBXNativeTarget "tipsTests" */ = {
 			isa = XCConfigurationList;
@@ -417,6 +422,7 @@
 				A9118E7D1C2B54640075C09D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
