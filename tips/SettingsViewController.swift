@@ -18,25 +18,22 @@ class SettingsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        //var tipPercentage = Int(slider.value)
         
+        //defaultTip.text = String(format: "%.0f%%", tipPercentage)
         
-        var tipPercentage = slider.value
-        defaultTip.text = String(format: "%.0f%%", tipPercentage)
-        
-        // Do any additional setup after loading the view.
+        //Do any additional setup after loading the view.
     }
 
     @IBAction func sliderValueChanged(sender: AnyObject) {
-        var tipPercentage = slider.value
+        var tipPercentage = Int(round(slider.value))
         
-        defaultTip.text = String(format: "%.0f%%", tipPercentage)
+        defaultTip.text = "\(tipPercentage)%"
         
         
         let defaults = NSUserDefaults.standardUserDefaults()
-        defaults.setDouble(13.00, forKey: "default_tip_percentage")
+        defaults.setInteger(tipPercentage, forKey: "default_tip_percentage")
         defaults.synchronize()
-        
-        
     }
 
     
@@ -46,6 +43,13 @@ class SettingsViewController: UIViewController {
     }
     
     
+    override func viewWillAppear(animated: Bool) {
+        let defaults = NSUserDefaults.standardUserDefaults()
+        let defaultPercent = defaults.integerForKey("default_tip_percentage")
+        
+        slider.value = Float(defaultPercent)
+        defaultTip.text = "\(defaultPercent)%"
+    }
     
     /*
     // MARK: - Navigation
