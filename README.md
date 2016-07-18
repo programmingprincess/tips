@@ -14,7 +14,7 @@ The following **required** functionality is complete:
 The following **optional** features are implemented:
 * [X] Settings page to change the default tip percentage.
 * [ ] UI animations
-* [ ] Remembering the bill amount across app restarts (if <10mins)
+* [X] Remembering the bill amount across app restarts (if <10mins)
 * [ ] Using locale-specific currency and currency thousands separators.
 * [ ] Making sure the keyboard is always visible and the bill amount is always the first responder. This way the user doesn't have to tap anywhere to use this app. Just launch the app and start typing.
 
@@ -32,7 +32,7 @@ GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
 ## Notes
 
-Because I used a slider and float values were introdcued, switching back and forth between data types (trying to make flaots and doubels and integers compatible) became a problem, and caused some number mismatches. (Sometimes, when the default percentage was 18%, the main page's tip slider would read 18%, and so forth). This was fixed by organizing the code and commenting important steps. 
+Because I used a slider and float values were introdcued, switching back and forth between data types (trying to make floats and doubles and integers compatible) became a problem, and caused some number mismatches. (Sometimes, when the default percentage was 18%, the main page's tip slider would read 18%, and so forth). This was fixed by organizing the code and commenting important steps. 
 
 ## License
 
